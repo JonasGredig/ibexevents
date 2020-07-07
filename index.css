@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    background-image: url("img/WebBackground.png");
+    background-size: 150% 150%;
+    font-family: 'Passion One', cursive;
+}
+#parallax {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-3.png), url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-2.png), url(img/IbexEventsLogo.png);
+    background-repeat: no-repeat;
+    background-size: 60ch 60ch;
+    background-position: center;
+    background-position: 50% 50%;
+}
+h1 {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 5px #000;
+    color: #FFF;
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-size: 70px;
+}
