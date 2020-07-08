@@ -4,8 +4,6 @@
 
     function parallax(e) {
         let hasDeviceGyro = document.querySelector("#hasDeviceGyro").value;
-        console.log(hasDeviceGyro);
-        console.log(typeof hasDeviceGyro);
         if (hasDeviceGyro == 'false') {
             let _w = window.innerWidth / 2;
             let _h = window.innerHeight / 2;

@@ -44,15 +44,14 @@ function initSensor() {
 }
 
 function onReadingSensor(sensor) {
-    console.log('Quaternion: ' + sensor.quaternion);
     let angles = quatToEulAngle(sensor.quaternion);
-    console.log('Angles: ' + angles);
 
     let _w = window.innerWidth / 2;
     let _h = window.innerHeight / 2;
     let _mouseX;
     let _mouseY;
 
+    //validate X axis
     if (angles[1] < -45) {
       _mouseX = -45;
     } else if (angles[1] > 45){
@@ -61,13 +60,15 @@ function onReadingSensor(sensor) {
         _mouseX = angles[1];
     }
 
-    if (angles[2] < 45) {
+    //validate Y axis
+    if (angles[2] < 45 && angles[2] > -135) {
         _mouseY = 45;
-    } else if (angles[2] > 135){
+    } else if (angles[2] > 135 || angles[2] < 0){
         _mouseY = 135;
     } else {
         _mouseY = angles[2];
     }
+
 
     _mouseX *= 45;
     _mouseY *= 8;
