@@ -74,8 +74,8 @@ function onReadingSensor(sensor) {
     console.log('----------------------')
 
 
-    _mouseX *= 45;
-    _mouseY *= 8;
+    _mouseX *= 65;
+    _mouseY *= 12;
 
     let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
     let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
