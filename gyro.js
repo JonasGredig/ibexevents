@@ -53,6 +53,7 @@ function onReadingSensor(sensor) {
     let _mouseX;
     let _mouseY;
 
+
     if (angles[1] < -45) {
       _mouseX = -45;
     } else if (angles[1] > 45){
