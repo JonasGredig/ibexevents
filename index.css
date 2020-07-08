@@ -8,7 +8,7 @@ body{
 }
 
 .startpage {
-    background-image: url("img/WebBackgroundImage.png");
+    background-image: url("img/WebBackgroundImage.jpg");
     background-position: center;
     background-size: 2000px 2000px;
 }
@@ -47,6 +47,7 @@ body{
 
 .sectioncards {
     padding-top: 50px;
+    padding-bottom: 100px;
     width: 100%;
 }
 
