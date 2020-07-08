@@ -37,7 +37,7 @@ function initSensor() {
     sensor.onreading = () => onReadingSensor(sensor);
     sensor.onerror = (event) => {
         if (event.error.name == 'NotReadableError') {
-            console.log("Sensor is not available.");
+            document.querySelector("#hasDeviceGyro").value = false;
         }
     }
     sensor.start();
