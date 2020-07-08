@@ -8,7 +8,7 @@ body{
 }
 
 .startpage {
-    background-image: url("img/WebBackground.png");
+    background-image: url("img/WebBackgroundImage.png");
     background-position: center;
     background-size: 2000px 2000px;
 }
