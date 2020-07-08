@@ -50,7 +50,7 @@ function onReadingSensor(sensor) {
 
     let _w = window.innerWidth / 2;
     let _h = window.innerHeight / 2;
-    let _mouseX = angles[1] * 15;
+    let _mouseX = angles[1] * 25;
     console.log('X: ' + _mouseX + '   width: ' + _w);
     let _mouseY = angles[2] * 8;
     console.log('Y: ' + _mouseY + '   height: ' + _h);
