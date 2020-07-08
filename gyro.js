@@ -51,7 +51,7 @@ function onReadingSensor(sensor) {
     let _mouseX;
     let _mouseY;
 
-    //validate X axis
+    console.log('Angle1: ' + angles[1]);
     if (angles[1] < -45) {
       _mouseX = -45;
     } else if (angles[1] > 45){
@@ -60,14 +60,18 @@ function onReadingSensor(sensor) {
         _mouseX = angles[1];
     }
 
-    //validate Y axis
+    console.log('mouseX: ' + _mouseX);
+    console.log('');
+    console.log('Angle2: ' + angles[2]);
     if (angles[2] < 45 && angles[2] > -135) {
         _mouseY = 45;
-    } else if (angles[2] > 135 || angles[2] < 0){
+    } else if (angles[2] > 135 || angles[2] < 45){
         _mouseY = 135;
     } else {
         _mouseY = angles[2];
     }
+    console.log('mouseY: ' + _mouseY);
+    console.log('----------------------')
 
 
     _mouseX *= 45;
