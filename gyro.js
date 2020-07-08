@@ -54,20 +54,20 @@ function onReadingSensor(sensor) {
     let _mouseY;
 
 
-    if (angles[1] < -45) {
+    if (angles[2] < -45) {
       _mouseX = -45;
-    } else if (angles[1] > 45){
+    } else if (angles[2] > 45){
         _mouseX = 45;
     } else {
-        _mouseX = angles[1] * 45;
+        _mouseX = angles[2] * 8;
     }
 
-    if (angles[2] < 45) {
+    if (angles[1] < 45) {
         _mouseY = 45;
-    } else if (angles[2] > 135){
+    } else if (angles[1] > 135){
         _mouseY = 135;
     } else {
-        _mouseY = angles[2] * 8;
+        _mouseY = angles[1] * 45;
     }
 
     let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
