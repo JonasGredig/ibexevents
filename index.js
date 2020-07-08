@@ -1,14 +1,14 @@
 (function () {
-
     document.addEventListener("mousemove", parallax);
     const elem = document.querySelector("#parallax");
-
 
     function parallax(e) {
         let _w = window.innerWidth / 2;
         let _h = window.innerHeight / 2;
         let _mouseX = e.clientX;
+        console.log('X: ' + _mouseX + '   width: ' + _w);
         let _mouseY = e.clientY;
+        console.log('Y: ' + _mouseY + '   height: ' + _h);
         let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
         let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
         let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
