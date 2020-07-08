@@ -20,7 +20,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -34,7 +34,7 @@
 <header>
     <div class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm">
         <div class="container d-flex justify-content-between">
-            <a class="navbar-brand" href="#section1">
+            <a class="navbar-brand" href="#main">
                 <img src="img/IbexEventsLogo.png" width="40" height="40" alt="" loading="lazy">
                 Ibex Events
             </a>
@@ -66,12 +66,12 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section2" tabindex="-1" aria-disabled="true">
+                        <a class="nav-link" href="#events" tabindex="-1" aria-disabled="true">
                             Events
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section3" tabindex="-1" aria-disabled="true">
+                        <a class="nav-link" href="#about" tabindex="-1" aria-disabled="true">
 
                             About us
                         </a>
@@ -82,12 +82,14 @@
     </div>
 </header>
 <main>
-    <section id="section1">
-        <div id="parallax">
-            <h1 class="startpagetitle">Ibex Events</h1>
+    <section id="main">
+        <div class="startpage">
+            <div id="parallax">
+                <h1 class="startpagetitle">Ibex Events</h1>
+            </div>
         </div>
     </section>
-    <section id="section2">
+    <section id="events">
         <div>
             <div class="sectioncards card bg-light">
                 <div class="card-body">
@@ -98,35 +100,47 @@
 
         </div>
     </section>
-    <section id="section3">
+    <section id="about">
         <div>
             <div class="sectioncards card bg-light">
                 <div class="card-body">
                     <h1 class="card-title">About us</h1>
                     <p class="card-text">The Goal of Ibex Events is to present incredible moments to the Harder Styles
-                        scene in Switzerland.</p>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="card aboutcard" style="max-width: 24rem">
-                            <!--<img src="..." class="card-img-top" alt="...">-->
-                            <div class="card-body">
-                                <h3 class="card-title">Jonas Gredig</h3>
-                                <h5>CEO & General Management</h5>
-                                <p class="card-text">jonasgredig.ch</p>
+                        scene in Switzerland. We are </p>
+                    <div class="row aboutcardrow">
+                        <div class="col-sm-6">
+                            <div class="card aboutcard" style="max-width: 24rem">
+                                <!--<img src="..." class="card-img-top" alt="...">-->
+                                <div class="card-body">
+                                    <h3 class="card-title">Jonas Gredig</h3>
+                                    <h5>Head of Ibex Events | General Management</h5>
+                                    <div>
+                                        <a class="card-text" href="https://jonasgredig.ch">jonasgredig.ch</a>
+                                    </div>
+                                    <div>
+                                        <a class="card-text" href="mailto:contact.ibexevents@gmail.com">contact.ibexevents@gmail.com</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card aboutcard" style="max-width: 24rem">
+                                <!--<img src="..." class="card-img-top" alt="...">-->
+                                <div class="card-body">
+                                    <h3 class="card-title">Greneey</h3>
+                                    <h5>Media Production</h5>
+                                    <div>
+                                        <a class="card-text" href="https://coasterpix.com">coasterpix.com</a>
+                                    </div>
+                                    <div>
+                                        <a style="color: #FFFFFF">.</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="card aboutcard" style="max-width: 24rem">
-                            <!--<img src="..." class="card-img-top" alt="...">-->
-                            <div class="card-body">
-                                <h3 class="card-title">Greneey</h3>
-                                <h5>Media Production</h5>
-                                <p class="card-text">coasterpix.com</p>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
 
             </div>
